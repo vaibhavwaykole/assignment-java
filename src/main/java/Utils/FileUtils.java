@@ -8,6 +8,8 @@ public class FileUtils {
 
     private static final String resourcesPath = "/Users/vaibhavwaykole/IdeaProjects/assignment-swati/src/main/resources/";
 
+
+
     public List<String> readFile(String fileName) throws IOException {
         List<String> recordsList = new ArrayList<>();
         try {

@@ -1,3 +1,4 @@
 model/LogEvent.class
+DriverClass.class
 Utils/Mapper.class
 Utils/FileUtils.class
