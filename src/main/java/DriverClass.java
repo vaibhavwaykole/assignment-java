@@ -24,7 +24,7 @@ public class DriverClass {
         Map<String, List<LogEvent>> map = logEventList.stream().sorted(compareByTimeStamp).collect(Collectors.groupingBy(LogEvent::getId));
         map.forEach((key, value) -> {
             System.out.print("Key is: " + key + ", Value is:" + value);
-            boolean result = verifyIfDifferenceInTimeStampIsLessThan4Secs(value);
+            boolean result = verifyIfDifferenceInTimeStampIsGreaterThanOrEqualTo4Secs(value);
             if (result) {
                 System.out.println("Add Logic to Add this object data in the Database for the Culprit record");
             }
@@ -36,7 +36,7 @@ public class DriverClass {
 
 
 
-    private static boolean verifyIfDifferenceInTimeStampIsLessThan4Secs(List<LogEvent> value) {
+    private static boolean verifyIfDifferenceInTimeStampIsGreaterThanOrEqualTo4Secs(List<LogEvent> value) {
         if (value.size() == 1)
             return true;
         else if (value.size() == 2) {
