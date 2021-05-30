@@ -1,0 +1,8 @@
+{"id": "abcd123", "state": "STARTING","timestamp": 1000002}
+{"id": "abcd123", "state": "ENDING","timestamp": 1000012}
+{"id": "abcd1234", "state": "STARTING","timestamp": 1000002}
+{"id": "abcd1234", "state": "ENDING","timestamp": 1000012}
+{"id": "abcd1235", "state": "STARTING","timestamp": 1000002}
+{"id": "abcd1236", "state": "STARTING","timestamp": 1000004}
+{"id": "abcd1235", "state": "ENDING","timestamp": 1000012}
+{"id": "abcd1236", "state": "ENDING","timestamp": 1000006}

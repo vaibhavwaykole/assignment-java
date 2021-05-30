@@ -1,0 +1,3 @@
+model/LogEvent.class
+Utils/Mapper.class
+Utils/FileUtils.class
