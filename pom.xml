@@ -7,10 +7,9 @@
     <groupId>org.example</groupId>
     <artifactId>assignment-swati</artifactId>
     <version>1.0</version>
-
     <properties>
-        <maven.compiler.source>15</maven.compiler.source>
-        <maven.compiler.target>15</maven.compiler.target>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
     <dependencies>
         <dependency>
@@ -23,8 +22,14 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.25</version>
         </dependency>
-
-
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.5.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+
+
 
 </project>
