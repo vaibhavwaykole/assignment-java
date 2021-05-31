@@ -1,3 +1,4 @@
+Utils/HsqlConnection.class
 model/LogEvent.class
 DriverClass.class
 Utils/Mapper.class
