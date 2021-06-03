@@ -13,7 +13,7 @@ public class DriverClass {
         String fileName = "batch.txt";
         List<LogEvent> logEventList = FileUtils.getListOfRecordsList(FileUtils.getFileStream(fileName));
         System.out.println(logEventList);
-        logEventList.stream()
+        logEventList.parallelStream()
                 .sorted(Comparator.comparing(LogEvent::getTimestamp))
                 .collect(Collectors.groupingBy(LogEvent::getId))
                 .forEach((key, value) -> {
