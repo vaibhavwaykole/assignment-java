@@ -18,7 +18,7 @@ public class LogEvent {
         return state;
     }
 
-    public Integer getTimestamp() {
+    public  Integer getTimestamp() {
         return timestamp;
     }
 
