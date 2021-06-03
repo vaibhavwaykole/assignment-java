@@ -26,7 +26,7 @@ public class FileUtils {
 
         List<LogEvent> logEventList = new ArrayList<>();
         fileStream.forEach(row -> {
-                    logEventList.add(Mapper.deSerialize(row));
+                    logEventList.add(LogEventMapper.deSerialize(row));
                 }
         );
         return logEventList;

@@ -1,12 +1,16 @@
 package Utils;
 
+import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.LogEvent;
 
-public class Mapper {
-    
-    public static LogEvent deSerialize( String row) {
+import java.io.IOException;
+import java.io.StringWriter;
+
+public class LogEventMapper {
+
+    public static LogEvent deSerialize(String row) {
         ObjectMapper mapper = new ObjectMapper();
         LogEvent logEvent = null;
         try {
@@ -18,8 +22,14 @@ public class Mapper {
     }
 
 
-    public String serialize(Object obj){
+    public String serialize(LogEvent logEvent) throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        StringWriter writer = new StringWriter();
+        JsonGenerator jsonGenerator = null;
+        mapper.writeValue(writer, logEvent);
         return "";
+
+
     }
 
 
